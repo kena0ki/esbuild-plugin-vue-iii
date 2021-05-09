@@ -1,0 +1,3 @@
+[submodule "vite"]
+	path = vite
+	url = git@github.com:kena0ki/vite.git

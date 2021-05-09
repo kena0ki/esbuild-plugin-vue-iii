@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "../dist",
+    "strict": true,
+    "noImplicitAny": false,
+    // "isolatedModules": true, // needed for esbuild
+    "esModuleInterop": true, // needed for esbuild
+    // "diagnostics": true,
+  },
+  "include": [
+      "**/*"
+  ]
+}
