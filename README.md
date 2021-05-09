@@ -2,6 +2,12 @@
 This is a `esbuild` plugin for vue 3 SFC files (.vue).  
 The library is based on the `@vitejs/plugin-vue` internal modules, whose interface is tweaked to suit as a `esbuild` plugin.
 
+## Install
+``` sh
+npm i -D esbuild-plugin-vue-iii
+```
+ *) yarn can't be used. yarn seems to be unable to resolve local file dependency well.
+
 ## Usage
 ``` js
 const build = require('esbuild').build;
@@ -21,6 +27,7 @@ build({
  - Template Static Asset Reference
  - Custom Blocks
  - SFC Src Imports
+ - Source Map
 
 ## Lisence
 MIT
