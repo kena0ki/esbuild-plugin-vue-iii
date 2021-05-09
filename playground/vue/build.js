@@ -9,5 +9,5 @@ esbuild_1.build({
     target: ['es2019'],
     outdir: 'dist',
     format: 'esm',
-    plugins: [esbuild_plugin_vue_iii_1.plugin()]
+    plugins: [esbuild_plugin_vue_iii_1.vue3Plugin()]
 })["catch"](function () { return process.exit(1); });
