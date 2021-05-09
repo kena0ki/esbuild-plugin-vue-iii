@@ -1,6 +1,6 @@
 # esbuild-plugin-vue-iii
 This is a `esbuild` plugin for vue 3 SFC files (.vue).  
-The library based on the `@vitejs/plugin-vue` internal modules, whose interface is tweaked to suit as `esbuild` plugin.  
+The library is based on the `@vitejs/plugin-vue` internal modules, whose interface is tweaked to suit as a `esbuild` plugin.
 
 ## Usage
 ``` js
