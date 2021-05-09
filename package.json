@@ -1,8 +1,8 @@
 {
   "name": "esbuild-plugin-vue-iii",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "a esbuild plugin for vue 3 SFC files.",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -P ./src/tsconfig.json"
