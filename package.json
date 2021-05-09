@@ -1,7 +1,7 @@
 {
   "name": "esbuild-plugin-vue-iii",
-  "version": "0.0.0",
-  "description": "esbuild plugin for vue 3 SFC files.",
+  "version": "0.1.0",
+  "description": "a esbuild plugin for vue 3 SFC files.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,10 +11,18 @@
     "esbuild",
     "plugin",
     "vue",
-    "3"
+    "vue3"
   ],
   "author": "kena0ki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kena0ki/esbuild-plugin-vue-iii.git"
+  },
   "license": "MIT",
+  "files": [
+    "dist/",
+    "lib/"
+  ],
   "devDependencies": {
     "@babel/types": "7.11.0",
     "@tsconfig/node12": "^1.0.7",

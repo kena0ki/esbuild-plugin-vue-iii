@@ -1,5 +1,5 @@
 import { build } from 'esbuild';
-import { plugin } from 'esbuild-plugin-vue-iii';
+import { vue3Plugin } from 'esbuild-plugin-vue-iii';
 
 build({
   entryPoints: ['index.ts'],
@@ -8,6 +8,6 @@ build({
   target: ['es2019'],
   outdir: 'dist',
   format: 'esm',
-  plugins: [plugin()],
+  plugins: [vue3Plugin()],
 }).catch(() => process.exit(1));
 

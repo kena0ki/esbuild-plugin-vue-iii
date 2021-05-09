@@ -81,9 +81,10 @@ const dummyContextFactory = (): any => {
 //   rawOptions.include || /\.vue$/,
 //   rawOptions.exclude
 // )
-export const plugin = () => ({
+export const vue3Plugin = () => ({
   name: 'vue-iii',
   setup(build: PluginBuild) {
+    // transform
     build.onResolve({ filter: /\.vue$/ }, args => ({
       path: args.importer ? path.resolve(args.importer, '..', args.path) : path.resolve(args.path),
       namespace: 'vue-iii-transform',
@@ -115,35 +116,11 @@ export const plugin = () => ({
           errors: dummyContext.errors
         };
       } else {
-        // sub block request
-        const descriptor = getDescriptor(filename)!;
-        if (query.type === 'template') {
-          const ret = transformTemplateAsModule(code, descriptor, options, dummyContext, ssr);
-          logger.log('transform 3 returned', ret);
-          return {
-            contents: ret?.code,
-            loader: 'ts',
-            resolveDir,
-            errors: dummyContext.errors
-          };
-        } else if (query.type === 'style') {
-          const ret = await transformStyle(
-            code,
-            descriptor,
-            Number(query.index),
-            options,
-            dummyContext
-          );
-          logger.log('transform 4 returned', ret);
-          return {
-            contents: ret?.code,
-            loader: 'ts',
-            resolveDir,
-            errors: dummyContext.errors
-          };
-        }
+        // sub block request is moved to load section
       }
     });
+
+    // load
     build.onResolve({ filter: /\.vue\?/ }, args => {
       // serve subpart requests (*?vue) as virtual modules
       if (parseVueRequest(args.path).query.vue) {
@@ -153,7 +130,7 @@ export const plugin = () => ({
         };
       }
     });
-    build.onLoad({ filter: /\.vue\?/, namespace: 'vue-iii-load' }, args => {
+    build.onLoad({ filter: /\.vue\?/, namespace: 'vue-iii-load' }, async args => {
       const id = args.path;
       const ssr = false;
       const { filename, query } = parseVueRequest(id);
@@ -163,19 +140,44 @@ export const plugin = () => ({
       if (query.vue) {
         if (query.src) {
           logger.log('load 1 returned', id);
-          return { contents: fs.readFileSync(filename, 'utf-8'), loader: 'ts', resolveDir };
+          return { contents: await fs.promises.readFile(filename, 'utf-8'), loader: 'ts', resolveDir };
         }
         const descriptor = getDescriptor(filename)!;
         let block: SFCBlock | null | undefined;
-        let loader: Loader = 'ts';
+        const loader: Loader = 'ts';
+        const dummyContext = dummyContextFactory();
+        const options: ResolvedOptions = {
+          root: process.cwd(),
+        };
         if (query.type === 'script') {
           // handle <scrip> + <script setup> merge via compileScript()
           block = getResolvedScript(descriptor, ssr);
         } else if (query.type === 'template') {
           block = descriptor.template!;
+          const ret = transformTemplateAsModule(block.content, descriptor, options, dummyContext, ssr);
+          logger.log('transform 3 returned', ret);
+          return {
+            contents: ret?.code,
+            loader,
+            resolveDir,
+            errors: dummyContext.errors
+          };
         } else if (query.type === 'style') {
           block = descriptor.styles[query.index!];
-          loader = 'css';
+          const ret = await transformStyle(
+            block.content,
+            descriptor,
+            Number(query.index),
+            options,
+            dummyContext
+          );
+          logger.log('transform 4 returned', ret);
+          return {
+            contents: ret?.code,
+            loader: 'css',
+            resolveDir,
+            errors: dummyContext.errors
+          };
         } else if (query.index != null) {
           block = descriptor.customBlocks[query.index];
         }
