@@ -11,7 +11,7 @@ npm i -D esbuild-plugin-vue-iii
 ## Usage
 ``` js
 const build = require('esbuild').build;
-const vue3Plugin =  require('esbuild-plugin-vue-iii').vue3Plugin;
+const vue3Plugin = require('esbuild-plugin-vue-iii').vue3Plugin;
 
 build({
   entryPoints: ['index.ts'],
@@ -29,5 +29,5 @@ build({
  - SFC Src Imports
  - Source Map
 
-## Lisence
+## License
 MIT
