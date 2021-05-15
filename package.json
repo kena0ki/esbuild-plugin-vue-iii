@@ -5,7 +5,8 @@
   "main": "dist/src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -P ./src/tsconfig.json"
+    "build": "tsc -P ./src/tsconfig.json",
+    "postbuild": " cp -p ./vite/LICENSE ./dist/vite"
   },
   "keywords": [
     "esbuild",
@@ -30,12 +31,11 @@
     "@types/node": "^15.0.2",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
-    "esbuild": "^0.11.17",
     "eslint": "^7.25.0",
     "typescript": "^4.2.4"
   },
   "peerDependencies": {
-    "@vue/compiler-sfc": "^3.0.11"
+    "esbuild": "^0.11.17"
   },
   "// dependencies": {
     "@babel/generator": "~7.13.0",
@@ -47,6 +47,7 @@
   "dependencies": {
     "@rollup/pluginutils": "file:./lib/@rollup/pluginutils",
     "@typescript-eslint/typescript-estree": "^4.22.1",
+    "@vue/compiler-sfc": "^3.0.11",
     "querystring": "^0.2.1",
     "rollup": "^2.47.0",
     "source-map": "^0.6.1",
