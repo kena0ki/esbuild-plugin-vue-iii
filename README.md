@@ -4,9 +4,8 @@ The library is based on the `@vitejs/plugin-vue` internal modules, whose interfa
 
 ## Install
 ``` sh
-npm i -D esbuild-plugin-vue-iii
+npm i -D esbuild esbuild-plugin-vue-iii
 ```
- *) yarn can't be used. yarn seems to be unable to resolve local file dependency well.
 
 ## Usage
 ``` js
