@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generate 001. esm: indexCss 1`] = `
-"/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue?vue&type=style&index=0&lang.css */
+"/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue?vue&type=style&index=0&lang.css */
 .hmr-inc {
   color: red;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css */
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css */
 .blue-color {
   color: blue;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss */
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss */
 .orange-color {
   color: orange;
 }
 
-/* playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
+/* vite/packages/playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
 .src-imports-style {
   color: tan;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Slotted.vue?vue&type=style&index=0&scoped=true&lang.css */
-div[data-v-22535a66-s] {
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue?vue&type=style&index=0&scoped=true&lang.css */
+div[data-v-b60acbc6-s] {
   color: red;
 }
 "
@@ -51,9 +51,9 @@ var __toModule = (module) => {
   return __reExport(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, \\"default\\", module && module.__esModule && \\"default\\" in module ? {get: () => module.default, enumerable: true} : {value: module, enumerable: true})), module);
 };
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml
 var require_CustomBlock_vue_vue_type_i18n_index_0_lang = __commonJS({
-  \\"vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml\\"() {
+  \\"vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml\\"() {
     en:
       hello:
         \\"hello,vite!\\";
@@ -63,7 +63,7 @@ var require_CustomBlock_vue_vue_type_i18n_index_0_lang = __commonJS({
   }
 });
 
-// playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
+// vite/packages/playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
 function makeMap(str, expectsLowerCase) {
   const map2 = Object.create(null);
   const list = str.split(\\",\\");
@@ -243,7 +243,7 @@ var getGlobalThis = () => {
   return _globalThis || (_globalThis = typeof globalThis !== \\"undefined\\" ? globalThis : typeof self !== \\"undefined\\" ? self : typeof window !== \\"undefined\\" ? window : typeof global !== \\"undefined\\" ? global : {});
 };
 
-// playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+// vite/packages/playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 var targetMap = new WeakMap();
 var effectStack = [];
 var activeEffect;
@@ -979,7 +979,7 @@ function computed(getterOrOptions) {
   return new ComputedRefImpl(getter, setter, isFunction(getterOrOptions) || !getterOrOptions.set);
 }
 
-// playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+// vite/packages/playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var stack = [];
 function pushWarningContext(vnode) {
   stack.push(vnode);
@@ -5292,7 +5292,7 @@ function initCustomFormatter() {
 }
 var version = \\"3.0.11\\";
 
-// playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+// vite/packages/playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 var svgNS = \\"http://www.w3.org/2000/svg\\";
 var doc = typeof document !== \\"undefined\\" ? document : null;
 var tempContainer;
@@ -5901,7 +5901,7 @@ function normalizeContainer(container) {
   return container;
 }
 
-// playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
+// vite/packages/playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
 function initDev() {
   {
     initCustomFormatter();
@@ -5911,7 +5911,7 @@ if (true) {
   initDev();
 }
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue?vue&type=script&setup=true&lang.ts
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue?vue&type=script&setup=true&lang.ts
 var _hoisted_1 = /* @__PURE__ */ createVNode(\\"h2\\", {class: \\"hmr\\"}, \\"HMR\\", -1);
 var _hoisted_2 = /* @__PURE__ */ createVNode(\\"p\\", null, \\"Click the button then edit this message. The count should be preserved.\\", -1);
 var Hmr_vue_vue_type_script_setup_true_lang_default = defineComponent({
@@ -5932,10 +5932,10 @@ var Hmr_vue_vue_type_script_setup_true_lang_default = defineComponent({
   }
 });
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue
 var Hmr_default = Hmr_vue_vue_type_script_setup_true_lang_default;
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Syntax.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Syntax.vue
 var _hoisted_12 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Syntax Support\\", -1);
 var _hoisted_22 = {class: \\"syntax\\"};
 var _sfc_main = {
@@ -5958,13 +5958,13 @@ var _sfc_main = {
 };
 var Syntax_default = _sfc_main;
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css
 var _default = {};
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss
 var _default2 = {};
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue
 var _sfc_main2 = {};
 var _hoisted_13 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"CSS Modules\\", -1);
 var _hoisted_23 = /* @__PURE__ */ createTextVNode(\\" <style module> - this should be blue \\");
@@ -5992,7 +5992,7 @@ cssModules[\\"mod\\"] = _default2;
 _sfc_main2.render = _sfc_render;
 var CssModules_default = _sfc_main2;
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue
 var import_CustomBlock_vue_vue_type_i18n_index_0_lang = __toModule(require_CustomBlock_vue_vue_type_i18n_index_0_lang());
 function useI18n(locale = \\"en\\") {
   const instance = getCurrentInstance();
@@ -6021,7 +6021,7 @@ if (typeof import_CustomBlock_vue_vue_type_i18n_index_0_lang.default === \\"func
 _sfc_main3.render = _sfc_render2;
 var CustomBlock_default = _sfc_main3;
 
-// playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
+// vite/packages/playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
 var script_default = defineComponent({
   setup() {
     return {
@@ -6030,14 +6030,14 @@ var script_default = defineComponent({
   }
 });
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-import/SrcImport.vue
-script_default.__scopeId = \\"data-v-534e70f2\\";
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-import/SrcImport.vue
+script_default.__scopeId = \\"data-v-253b0930\\";
 var SrcImport_default = script_default;
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Slotted.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue
 var _sfc_main4 = {};
-var _withId = /* @__PURE__ */ withScopeId(\\"data-v-22535a66\\");
-pushScopeId(\\"data-v-22535a66\\");
+var _withId = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
+pushScopeId(\\"data-v-b60acbc6\\");
 var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
 popScopeId();
 var _sfc_render3 = /* @__PURE__ */ _withId((_ctx, _cache) => {
@@ -6047,23 +6047,23 @@ var _sfc_render3 = /* @__PURE__ */ _withId((_ctx, _cache) => {
   ]);
 });
 _sfc_main4.render = _sfc_render3;
-_sfc_main4.__scopeId = \\"data-v-22535a66\\";
+_sfc_main4.__scopeId = \\"data-v-b60acbc6\\";
 var Slotted_default = _sfc_main4;
 
-// playground/vue/node_modules/lodash-es/_freeGlobal.js
+// vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
 var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
 var freeGlobal_default = freeGlobal;
 
-// playground/vue/node_modules/lodash-es/_root.js
+// vite/packages/playground/vue/node_modules/lodash-es/_root.js
 var freeSelf = typeof self == \\"object\\" && self && self.Object === Object && self;
 var root = freeGlobal_default || freeSelf || Function(\\"return this\\")();
 var root_default = root;
 
-// playground/vue/node_modules/lodash-es/_Symbol.js
+// vite/packages/playground/vue/node_modules/lodash-es/_Symbol.js
 var Symbol2 = root_default.Symbol;
 var Symbol_default = Symbol2;
 
-// playground/vue/node_modules/lodash-es/_getRawTag.js
+// vite/packages/playground/vue/node_modules/lodash-es/_getRawTag.js
 var objectProto = Object.prototype;
 var hasOwnProperty2 = objectProto.hasOwnProperty;
 var nativeObjectToString = objectProto.toString;
@@ -6087,7 +6087,7 @@ function getRawTag(value) {
 }
 var getRawTag_default = getRawTag;
 
-// playground/vue/node_modules/lodash-es/_objectToString.js
+// vite/packages/playground/vue/node_modules/lodash-es/_objectToString.js
 var objectProto2 = Object.prototype;
 var nativeObjectToString2 = objectProto2.toString;
 function objectToString2(value) {
@@ -6095,7 +6095,7 @@ function objectToString2(value) {
 }
 var objectToString_default = objectToString2;
 
-// playground/vue/node_modules/lodash-es/_baseGetTag.js
+// vite/packages/playground/vue/node_modules/lodash-es/_baseGetTag.js
 var nullTag = \\"[object Null]\\";
 var undefinedTag = \\"[object Undefined]\\";
 var symToStringTag2 = Symbol_default ? Symbol_default.toStringTag : void 0;
@@ -6107,20 +6107,20 @@ function baseGetTag(value) {
 }
 var baseGetTag_default = baseGetTag;
 
-// playground/vue/node_modules/lodash-es/isObjectLike.js
+// vite/packages/playground/vue/node_modules/lodash-es/isObjectLike.js
 function isObjectLike(value) {
   return value != null && typeof value == \\"object\\";
 }
 var isObjectLike_default = isObjectLike;
 
-// playground/vue/node_modules/lodash-es/isSymbol.js
+// vite/packages/playground/vue/node_modules/lodash-es/isSymbol.js
 var symbolTag = \\"[object Symbol]\\";
 function isSymbol2(value) {
   return typeof value == \\"symbol\\" || isObjectLike_default(value) && baseGetTag_default(value) == symbolTag;
 }
 var isSymbol_default = isSymbol2;
 
-// playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
+// vite/packages/playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
 var reWhitespace = /\\\\s/;
 function trimmedEndIndex(string) {
   var index = string.length;
@@ -6130,21 +6130,21 @@ function trimmedEndIndex(string) {
 }
 var trimmedEndIndex_default = trimmedEndIndex;
 
-// playground/vue/node_modules/lodash-es/_baseTrim.js
+// vite/packages/playground/vue/node_modules/lodash-es/_baseTrim.js
 var reTrimStart = /^\\\\s+/;
 function baseTrim(string) {
   return string ? string.slice(0, trimmedEndIndex_default(string) + 1).replace(reTrimStart, \\"\\") : string;
 }
 var baseTrim_default = baseTrim;
 
-// playground/vue/node_modules/lodash-es/isObject.js
+// vite/packages/playground/vue/node_modules/lodash-es/isObject.js
 function isObject2(value) {
   var type = typeof value;
   return value != null && (type == \\"object\\" || type == \\"function\\");
 }
 var isObject_default = isObject2;
 
-// playground/vue/node_modules/lodash-es/toNumber.js
+// vite/packages/playground/vue/node_modules/lodash-es/toNumber.js
 var NAN = 0 / 0;
 var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
 var reIsBinary = /^0b[01]+$/i;
@@ -6170,13 +6170,13 @@ function toNumber2(value) {
 }
 var toNumber_default = toNumber2;
 
-// playground/vue/node_modules/lodash-es/now.js
+// vite/packages/playground/vue/node_modules/lodash-es/now.js
 var now = function() {
   return root_default.Date.now();
 };
 var now_default = now;
 
-// playground/vue/node_modules/lodash-es/debounce.js
+// vite/packages/playground/vue/node_modules/lodash-es/debounce.js
 var FUNC_ERROR_TEXT = \\"Expected a function\\";
 var nativeMax = Math.max;
 var nativeMin = Math.min;
@@ -6263,7 +6263,7 @@ function debounce(func, wait, options) {
 }
 var debounce_default = debounce;
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
 var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
 var _hoisted_25 = {class: \\"scan\\"};
 var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
@@ -6278,10 +6278,10 @@ var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
   }
 });
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/ScanDep.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue
 var ScanDep_default = ScanDep_vue_vue_type_script_setup_true_lang_default;
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-subdir/ImportFromSubDir.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/ImportFromSubDir.vue
 var _sfc_main5 = {};
 function _sfc_render4(_ctx, _cache) {
   return openBlock(), createBlock(\\"div\\", null, \\"Hello from sub dir\\");
@@ -6289,7 +6289,7 @@ function _sfc_render4(_ctx, _cache) {
 _sfc_main5.render = _sfc_render4;
 var ImportFromSubDir_default = _sfc_main5;
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-subdir/SubDir.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/SubDir.vue
 var _sfc_main6 = {
   expose: [],
   setup(__props) {
@@ -6300,7 +6300,7 @@ var _sfc_main6 = {
 };
 var SubDir_default = _sfc_main6;
 
-// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
+// vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
 var _hoisted_17 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
   /* @__PURE__ */ createCommentVNode(\\"hello\\")
 ], -1);
@@ -6344,10 +6344,10 @@ var Main_vue_vue_type_script_setup_true_lang_default = defineComponent({
   }
 });
 
-// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Main.vue
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue
 var Main_default = Main_vue_vue_type_script_setup_true_lang_default;
 
-// playground/vue/index.ts
+// vite/packages/playground/vue/index.ts
 createApp(Main_default).mount(\\"#app\\");
 /**
  * @license
@@ -6363,28 +6363,28 @@ createApp(Main_default).mount(\\"#app\\");
 `;
 
 exports[`generate 002. iife: indexCss 1`] = `
-"/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue?vue&type=style&index=0&lang.css */
+"/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue?vue&type=style&index=0&lang.css */
 .hmr-inc {
   color: red;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css */
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css */
 .blue-color {
   color: blue;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss */
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss */
 .orange-color {
   color: orange;
 }
 
-/* playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
+/* vite/packages/playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
 .src-imports-style {
   color: tan;
 }
 
-/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Slotted.vue?vue&type=style&index=0&scoped=true&lang.css */
-div[data-v-22535a66-s] {
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue?vue&type=style&index=0&scoped=true&lang.css */
+div[data-v-b60acbc6-s] {
   color: red;
 }
 "
@@ -6414,9 +6414,9 @@ exports[`generate 002. iife: indexJs 1`] = `
     return __reExport(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, \\"default\\", module && module.__esModule && \\"default\\" in module ? {get: () => module.default, enumerable: true} : {value: module, enumerable: true})), module);
   };
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml
   var require_CustomBlock_vue_vue_type_i18n_index_0_lang = __commonJS({
-    \\"vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml\\"() {
+    \\"vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue?vue&type=i18n&index=0&lang.yaml\\"() {
       en:
         hello:
           \\"hello,vite!\\";
@@ -6426,7 +6426,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     }
   });
 
-  // playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
+  // vite/packages/playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
   function makeMap(str, expectsLowerCase) {
     const map2 = Object.create(null);
     const list = str.split(\\",\\");
@@ -6606,7 +6606,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     return _globalThis || (_globalThis = typeof globalThis !== \\"undefined\\" ? globalThis : typeof self !== \\"undefined\\" ? self : typeof window !== \\"undefined\\" ? window : typeof global !== \\"undefined\\" ? global : {});
   };
 
-  // playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+  // vite/packages/playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
   var targetMap = new WeakMap();
   var effectStack = [];
   var activeEffect;
@@ -7342,7 +7342,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     return new ComputedRefImpl(getter, setter, isFunction(getterOrOptions) || !getterOrOptions.set);
   }
 
-  // playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+  // vite/packages/playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
   var stack = [];
   function pushWarningContext(vnode) {
     stack.push(vnode);
@@ -11655,7 +11655,7 @@ Component that was made reactive: \`, type);
   }
   var version = \\"3.0.11\\";
 
-  // playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+  // vite/packages/playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
   var svgNS = \\"http://www.w3.org/2000/svg\\";
   var doc = typeof document !== \\"undefined\\" ? document : null;
   var tempContainer;
@@ -12264,7 +12264,7 @@ Component that was made reactive: \`, type);
     return container;
   }
 
-  // playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
+  // vite/packages/playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
   function initDev() {
     {
       initCustomFormatter();
@@ -12274,7 +12274,7 @@ Component that was made reactive: \`, type);
     initDev();
   }
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue?vue&type=script&setup=true&lang.ts
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue?vue&type=script&setup=true&lang.ts
   var _hoisted_1 = /* @__PURE__ */ createVNode(\\"h2\\", {class: \\"hmr\\"}, \\"HMR\\", -1);
   var _hoisted_2 = /* @__PURE__ */ createVNode(\\"p\\", null, \\"Click the button then edit this message. The count should be preserved.\\", -1);
   var Hmr_vue_vue_type_script_setup_true_lang_default = defineComponent({
@@ -12295,10 +12295,10 @@ Component that was made reactive: \`, type);
     }
   });
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Hmr.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Hmr.vue
   var Hmr_default = Hmr_vue_vue_type_script_setup_true_lang_default;
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Syntax.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Syntax.vue
   var _hoisted_12 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Syntax Support\\", -1);
   var _hoisted_22 = {class: \\"syntax\\"};
   var _sfc_main = {
@@ -12321,13 +12321,13 @@ Component that was made reactive: \`, type);
   };
   var Syntax_default = _sfc_main;
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=0&lang.module.css
   var _default = {};
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss
   var _default2 = {};
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CssModules.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue
   var _sfc_main2 = {};
   var _hoisted_13 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"CSS Modules\\", -1);
   var _hoisted_23 = /* @__PURE__ */ createTextVNode(\\" <style module> - this should be blue \\");
@@ -12355,7 +12355,7 @@ Component that was made reactive: \`, type);
   _sfc_main2.render = _sfc_render;
   var CssModules_default = _sfc_main2;
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/CustomBlock.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue
   var import_CustomBlock_vue_vue_type_i18n_index_0_lang = __toModule(require_CustomBlock_vue_vue_type_i18n_index_0_lang());
   function useI18n(locale = \\"en\\") {
     const instance = getCurrentInstance();
@@ -12384,7 +12384,7 @@ Component that was made reactive: \`, type);
   _sfc_main3.render = _sfc_render2;
   var CustomBlock_default = _sfc_main3;
 
-  // playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
+  // vite/packages/playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
   var script_default = defineComponent({
     setup() {
       return {
@@ -12393,14 +12393,14 @@ Component that was made reactive: \`, type);
     }
   });
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-import/SrcImport.vue
-  script_default.__scopeId = \\"data-v-534e70f2\\";
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-import/SrcImport.vue
+  script_default.__scopeId = \\"data-v-253b0930\\";
   var SrcImport_default = script_default;
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Slotted.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue
   var _sfc_main4 = {};
-  var _withId = /* @__PURE__ */ withScopeId(\\"data-v-22535a66\\");
-  pushScopeId(\\"data-v-22535a66\\");
+  var _withId = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
+  pushScopeId(\\"data-v-b60acbc6\\");
   var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
   popScopeId();
   var _sfc_render3 = /* @__PURE__ */ _withId((_ctx, _cache) => {
@@ -12410,23 +12410,23 @@ Component that was made reactive: \`, type);
     ]);
   });
   _sfc_main4.render = _sfc_render3;
-  _sfc_main4.__scopeId = \\"data-v-22535a66\\";
+  _sfc_main4.__scopeId = \\"data-v-b60acbc6\\";
   var Slotted_default = _sfc_main4;
 
-  // playground/vue/node_modules/lodash-es/_freeGlobal.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
   var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
   var freeGlobal_default = freeGlobal;
 
-  // playground/vue/node_modules/lodash-es/_root.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_root.js
   var freeSelf = typeof self == \\"object\\" && self && self.Object === Object && self;
   var root = freeGlobal_default || freeSelf || Function(\\"return this\\")();
   var root_default = root;
 
-  // playground/vue/node_modules/lodash-es/_Symbol.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_Symbol.js
   var Symbol2 = root_default.Symbol;
   var Symbol_default = Symbol2;
 
-  // playground/vue/node_modules/lodash-es/_getRawTag.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_getRawTag.js
   var objectProto = Object.prototype;
   var hasOwnProperty2 = objectProto.hasOwnProperty;
   var nativeObjectToString = objectProto.toString;
@@ -12450,7 +12450,7 @@ Component that was made reactive: \`, type);
   }
   var getRawTag_default = getRawTag;
 
-  // playground/vue/node_modules/lodash-es/_objectToString.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_objectToString.js
   var objectProto2 = Object.prototype;
   var nativeObjectToString2 = objectProto2.toString;
   function objectToString2(value) {
@@ -12458,7 +12458,7 @@ Component that was made reactive: \`, type);
   }
   var objectToString_default = objectToString2;
 
-  // playground/vue/node_modules/lodash-es/_baseGetTag.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_baseGetTag.js
   var nullTag = \\"[object Null]\\";
   var undefinedTag = \\"[object Undefined]\\";
   var symToStringTag2 = Symbol_default ? Symbol_default.toStringTag : void 0;
@@ -12470,20 +12470,20 @@ Component that was made reactive: \`, type);
   }
   var baseGetTag_default = baseGetTag;
 
-  // playground/vue/node_modules/lodash-es/isObjectLike.js
+  // vite/packages/playground/vue/node_modules/lodash-es/isObjectLike.js
   function isObjectLike(value) {
     return value != null && typeof value == \\"object\\";
   }
   var isObjectLike_default = isObjectLike;
 
-  // playground/vue/node_modules/lodash-es/isSymbol.js
+  // vite/packages/playground/vue/node_modules/lodash-es/isSymbol.js
   var symbolTag = \\"[object Symbol]\\";
   function isSymbol2(value) {
     return typeof value == \\"symbol\\" || isObjectLike_default(value) && baseGetTag_default(value) == symbolTag;
   }
   var isSymbol_default = isSymbol2;
 
-  // playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
   var reWhitespace = /\\\\s/;
   function trimmedEndIndex(string) {
     var index = string.length;
@@ -12493,21 +12493,21 @@ Component that was made reactive: \`, type);
   }
   var trimmedEndIndex_default = trimmedEndIndex;
 
-  // playground/vue/node_modules/lodash-es/_baseTrim.js
+  // vite/packages/playground/vue/node_modules/lodash-es/_baseTrim.js
   var reTrimStart = /^\\\\s+/;
   function baseTrim(string) {
     return string ? string.slice(0, trimmedEndIndex_default(string) + 1).replace(reTrimStart, \\"\\") : string;
   }
   var baseTrim_default = baseTrim;
 
-  // playground/vue/node_modules/lodash-es/isObject.js
+  // vite/packages/playground/vue/node_modules/lodash-es/isObject.js
   function isObject2(value) {
     var type = typeof value;
     return value != null && (type == \\"object\\" || type == \\"function\\");
   }
   var isObject_default = isObject2;
 
-  // playground/vue/node_modules/lodash-es/toNumber.js
+  // vite/packages/playground/vue/node_modules/lodash-es/toNumber.js
   var NAN = 0 / 0;
   var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
   var reIsBinary = /^0b[01]+$/i;
@@ -12533,13 +12533,13 @@ Component that was made reactive: \`, type);
   }
   var toNumber_default = toNumber2;
 
-  // playground/vue/node_modules/lodash-es/now.js
+  // vite/packages/playground/vue/node_modules/lodash-es/now.js
   var now = function() {
     return root_default.Date.now();
   };
   var now_default = now;
 
-  // playground/vue/node_modules/lodash-es/debounce.js
+  // vite/packages/playground/vue/node_modules/lodash-es/debounce.js
   var FUNC_ERROR_TEXT = \\"Expected a function\\";
   var nativeMax = Math.max;
   var nativeMin = Math.min;
@@ -12626,7 +12626,7 @@ Component that was made reactive: \`, type);
   }
   var debounce_default = debounce;
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
   var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
   var _hoisted_25 = {class: \\"scan\\"};
   var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
@@ -12641,10 +12641,10 @@ Component that was made reactive: \`, type);
     }
   });
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/ScanDep.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue
   var ScanDep_default = ScanDep_vue_vue_type_script_setup_true_lang_default;
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-subdir/ImportFromSubDir.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/ImportFromSubDir.vue
   var _sfc_main5 = {};
   function _sfc_render4(_ctx, _cache) {
     return openBlock(), createBlock(\\"div\\", null, \\"Hello from sub dir\\");
@@ -12652,7 +12652,7 @@ Component that was made reactive: \`, type);
   _sfc_main5.render = _sfc_render4;
   var ImportFromSubDir_default = _sfc_main5;
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/src-subdir/SubDir.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/SubDir.vue
   var _sfc_main6 = {
     expose: [],
     setup(__props) {
@@ -12663,7 +12663,7 @@ Component that was made reactive: \`, type);
   };
   var SubDir_default = _sfc_main6;
 
-  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
+  // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
   var _hoisted_17 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
     /* @__PURE__ */ createCommentVNode(\\"hello\\")
   ], -1);
@@ -12707,10 +12707,10 @@ Component that was made reactive: \`, type);
     }
   });
 
-  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/playground/vue/Main.vue
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue
   var Main_default = Main_vue_vue_type_script_setup_true_lang_default;
 
-  // playground/vue/index.ts
+  // vite/packages/playground/vue/index.ts
   createApp(Main_default).mount(\\"#app\\");
 })();
 /**

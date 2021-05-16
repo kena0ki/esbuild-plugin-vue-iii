@@ -5,7 +5,7 @@ import { vue3Plugin } from '../src';
 describe('generate', () => {
   test(`001. esm`, async () => {
     await build({
-      entryPoints: ['playground/vue/index.ts'],
+      entryPoints: ['vite/packages/playground/vue/index.ts'],
       bundle: true,
       sourcemap: true,
       target: ['es2019'],
@@ -20,7 +20,7 @@ describe('generate', () => {
   });
   test(`002. iife`, async () => {
     await build({
-      entryPoints: ['playground/vue/index.ts'],
+      entryPoints: ['vite/packages/playground/vue/index.ts'],
       bundle: true,
       sourcemap: true,
       target: ['es2019'],
