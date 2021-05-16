@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-vue-iii",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "a esbuild plugin for vue 3 SFC files.",
   "main": "dist/src/index.js",
   "scripts": {
