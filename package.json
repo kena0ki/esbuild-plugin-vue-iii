@@ -13,7 +13,9 @@
     "esbuild",
     "plugin",
     "vue",
-    "vue3"
+    "vue3",
+    "single file components",
+    "SFC"
   ],
   "author": "kena0ki",
   "repository": {
