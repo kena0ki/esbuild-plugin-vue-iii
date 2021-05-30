@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "serve .",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.5",
+    "esbuild-plugin-vue-iii": "file:../dist/src/index.js",
+    "serve": "^11.3.2"
+  }
+}
