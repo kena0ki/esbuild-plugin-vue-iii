@@ -1,4 +1,4 @@
-import fs from 'fs';
+import { promises as fsp } from 'fs';
 import { build } from 'esbuild';
 import { vue3Plugin } from '../src';
 
@@ -13,9 +13,9 @@ describe('generate', () => {
       format: 'esm',
       plugins: [vue3Plugin()],
     });
-    const indexJs = await fs.promises.readFile('test/esm/dist/index.js','utf-8');
+    const indexJs = await fsp.readFile('test/esm/dist/index.js','utf-8');
     expect(indexJs).toMatchSnapshot('indexJs');
-    const indexCss = await fs.promises.readFile('test/esm/dist/index.css','utf-8');
+    const indexCss = await fsp.readFile('test/esm/dist/index.css','utf-8');
     expect(indexCss).toMatchSnapshot('indexCss');
   });
   test(`002. iife`, async () => {
@@ -28,9 +28,9 @@ describe('generate', () => {
       format: 'iife',
       plugins: [vue3Plugin()],
     });
-    const indexJs = await fs.promises.readFile('test/iife/dist/index.js','utf-8');
+    const indexJs = await fsp.readFile('test/iife/dist/index.js','utf-8');
     expect(indexJs).toMatchSnapshot('indexJs');
-    const indexCss = await fs.promises.readFile('test/iife/dist/index.css','utf-8');
+    const indexCss = await fsp.readFile('test/iife/dist/index.css','utf-8');
     expect(indexCss).toMatchSnapshot('indexCss');
   });
 });

@@ -11,6 +11,10 @@ export type Vue3PluginOptions = {
    * options for resolving static asset reference
    */
   assets?: AssetOptions,
+  /**
+   * whether resolve asset reference by this plugin
+   */
+  resolveAssets?: boolean,
 };
 /**
  * a function to create a plugin
@@ -19,7 +23,9 @@ export const vue3Plugin = (opts: Vue3PluginOptions = {}): Plugin => ({
   name: 'vue-iii',
   setup(build: PluginBuild) {
     main(build);
-    assets(build, opts.assets);
+    if (opts.resolveAssets) {
+      assets(build, opts.assets);
+    }
   },
 });
 
