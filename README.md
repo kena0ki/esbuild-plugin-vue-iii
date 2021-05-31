@@ -23,7 +23,7 @@ build({
 ## Not (yet) supported
  - Pre-Processors
  - CSS Modules  
- - Template Static Asset Reference
+ - ~~Template Static Asset Reference~~ -> esbuild built-in options can be used for this feature. See [issue#1](https://github.com/kena0ki/esbuild-plugin-vue-iii/issues/1).
  - Custom Blocks
  - SFC Src Imports
  - Source Map
