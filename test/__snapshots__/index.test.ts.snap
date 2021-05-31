@@ -75,7 +75,7 @@ var require_CustomBlock_vue_vue_type_i18n_index_0_lang = __commonJS({
   }
 });
 
-// vite/packages/playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
+// node_modules/@vue/shared/dist/shared.esm-bundler.js
 function makeMap(str, expectsLowerCase) {
   const map2 = Object.create(null);
   const list = str.split(\\",\\");
@@ -255,7 +255,7 @@ var getGlobalThis = () => {
   return _globalThis || (_globalThis = typeof globalThis !== \\"undefined\\" ? globalThis : typeof self !== \\"undefined\\" ? self : typeof window !== \\"undefined\\" ? window : typeof global !== \\"undefined\\" ? global : {});
 };
 
-// vite/packages/playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+// node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 var targetMap = new WeakMap();
 var effectStack = [];
 var activeEffect;
@@ -991,7 +991,7 @@ function computed(getterOrOptions) {
   return new ComputedRefImpl(getter, setter, isFunction(getterOrOptions) || !getterOrOptions.set);
 }
 
-// vite/packages/playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+// node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var stack = [];
 function pushWarningContext(vnode) {
   stack.push(vnode);
@@ -5304,7 +5304,7 @@ function initCustomFormatter() {
 }
 var version = \\"3.0.11\\";
 
-// vite/packages/playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+// node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 var svgNS = \\"http://www.w3.org/2000/svg\\";
 var doc = typeof document !== \\"undefined\\" ? document : null;
 var tempContainer;
@@ -5913,7 +5913,7 @@ function normalizeContainer(container) {
   return container;
 }
 
-// vite/packages/playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
+// node_modules/vue/dist/vue.runtime.esm-bundler.js
 function initDev() {
   {
     initCustomFormatter();
@@ -6119,20 +6119,20 @@ _sfc_main5.render = _sfc_render4;
 _sfc_main5.__scopeId = \\"data-v-b60acbc6\\";
 var Slotted_default = _sfc_main5;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
+// node_modules/lodash-es/_freeGlobal.js
 var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
 var freeGlobal_default = freeGlobal;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_root.js
+// node_modules/lodash-es/_root.js
 var freeSelf = typeof self == \\"object\\" && self && self.Object === Object && self;
 var root = freeGlobal_default || freeSelf || Function(\\"return this\\")();
 var root_default = root;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_Symbol.js
+// node_modules/lodash-es/_Symbol.js
 var Symbol2 = root_default.Symbol;
 var Symbol_default = Symbol2;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_getRawTag.js
+// node_modules/lodash-es/_getRawTag.js
 var objectProto = Object.prototype;
 var hasOwnProperty2 = objectProto.hasOwnProperty;
 var nativeObjectToString = objectProto.toString;
@@ -6156,7 +6156,7 @@ function getRawTag(value) {
 }
 var getRawTag_default = getRawTag;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_objectToString.js
+// node_modules/lodash-es/_objectToString.js
 var objectProto2 = Object.prototype;
 var nativeObjectToString2 = objectProto2.toString;
 function objectToString2(value) {
@@ -6164,7 +6164,7 @@ function objectToString2(value) {
 }
 var objectToString_default = objectToString2;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_baseGetTag.js
+// node_modules/lodash-es/_baseGetTag.js
 var nullTag = \\"[object Null]\\";
 var undefinedTag = \\"[object Undefined]\\";
 var symToStringTag2 = Symbol_default ? Symbol_default.toStringTag : void 0;
@@ -6176,20 +6176,20 @@ function baseGetTag(value) {
 }
 var baseGetTag_default = baseGetTag;
 
-// vite/packages/playground/vue/node_modules/lodash-es/isObjectLike.js
+// node_modules/lodash-es/isObjectLike.js
 function isObjectLike(value) {
   return value != null && typeof value == \\"object\\";
 }
 var isObjectLike_default = isObjectLike;
 
-// vite/packages/playground/vue/node_modules/lodash-es/isSymbol.js
+// node_modules/lodash-es/isSymbol.js
 var symbolTag = \\"[object Symbol]\\";
 function isSymbol2(value) {
   return typeof value == \\"symbol\\" || isObjectLike_default(value) && baseGetTag_default(value) == symbolTag;
 }
 var isSymbol_default = isSymbol2;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
+// node_modules/lodash-es/_trimmedEndIndex.js
 var reWhitespace = /\\\\s/;
 function trimmedEndIndex(string) {
   var index = string.length;
@@ -6199,21 +6199,21 @@ function trimmedEndIndex(string) {
 }
 var trimmedEndIndex_default = trimmedEndIndex;
 
-// vite/packages/playground/vue/node_modules/lodash-es/_baseTrim.js
+// node_modules/lodash-es/_baseTrim.js
 var reTrimStart = /^\\\\s+/;
 function baseTrim(string) {
   return string ? string.slice(0, trimmedEndIndex_default(string) + 1).replace(reTrimStart, \\"\\") : string;
 }
 var baseTrim_default = baseTrim;
 
-// vite/packages/playground/vue/node_modules/lodash-es/isObject.js
+// node_modules/lodash-es/isObject.js
 function isObject2(value) {
   var type = typeof value;
   return value != null && (type == \\"object\\" || type == \\"function\\");
 }
 var isObject_default = isObject2;
 
-// vite/packages/playground/vue/node_modules/lodash-es/toNumber.js
+// node_modules/lodash-es/toNumber.js
 var NAN = 0 / 0;
 var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
 var reIsBinary = /^0b[01]+$/i;
@@ -6239,13 +6239,13 @@ function toNumber2(value) {
 }
 var toNumber_default = toNumber2;
 
-// vite/packages/playground/vue/node_modules/lodash-es/now.js
+// node_modules/lodash-es/now.js
 var now = function() {
   return root_default.Date.now();
 };
 var now_default = now;
 
-// vite/packages/playground/vue/node_modules/lodash-es/debounce.js
+// node_modules/lodash-es/debounce.js
 var FUNC_ERROR_TEXT = \\"Expected a function\\";
 var nativeMax = Math.max;
 var nativeMin = Math.min;
@@ -6507,7 +6507,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     }
   });
 
-  // vite/packages/playground/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
+  // node_modules/@vue/shared/dist/shared.esm-bundler.js
   function makeMap(str, expectsLowerCase) {
     const map2 = Object.create(null);
     const list = str.split(\\",\\");
@@ -6687,7 +6687,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     return _globalThis || (_globalThis = typeof globalThis !== \\"undefined\\" ? globalThis : typeof self !== \\"undefined\\" ? self : typeof window !== \\"undefined\\" ? window : typeof global !== \\"undefined\\" ? global : {});
   };
 
-  // vite/packages/playground/vue/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+  // node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
   var targetMap = new WeakMap();
   var effectStack = [];
   var activeEffect;
@@ -7423,7 +7423,7 @@ exports[`generate 002. iife: indexJs 1`] = `
     return new ComputedRefImpl(getter, setter, isFunction(getterOrOptions) || !getterOrOptions.set);
   }
 
-  // vite/packages/playground/vue/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+  // node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
   var stack = [];
   function pushWarningContext(vnode) {
     stack.push(vnode);
@@ -11736,7 +11736,7 @@ Component that was made reactive: \`, type);
   }
   var version = \\"3.0.11\\";
 
-  // vite/packages/playground/vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+  // node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
   var svgNS = \\"http://www.w3.org/2000/svg\\";
   var doc = typeof document !== \\"undefined\\" ? document : null;
   var tempContainer;
@@ -12345,7 +12345,7 @@ Component that was made reactive: \`, type);
     return container;
   }
 
-  // vite/packages/playground/vue/node_modules/vue/dist/vue.runtime.esm-bundler.js
+  // node_modules/vue/dist/vue.runtime.esm-bundler.js
   function initDev() {
     {
       initCustomFormatter();
@@ -12551,20 +12551,20 @@ Component that was made reactive: \`, type);
   _sfc_main5.__scopeId = \\"data-v-b60acbc6\\";
   var Slotted_default = _sfc_main5;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
+  // node_modules/lodash-es/_freeGlobal.js
   var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
   var freeGlobal_default = freeGlobal;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_root.js
+  // node_modules/lodash-es/_root.js
   var freeSelf = typeof self == \\"object\\" && self && self.Object === Object && self;
   var root = freeGlobal_default || freeSelf || Function(\\"return this\\")();
   var root_default = root;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_Symbol.js
+  // node_modules/lodash-es/_Symbol.js
   var Symbol2 = root_default.Symbol;
   var Symbol_default = Symbol2;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_getRawTag.js
+  // node_modules/lodash-es/_getRawTag.js
   var objectProto = Object.prototype;
   var hasOwnProperty2 = objectProto.hasOwnProperty;
   var nativeObjectToString = objectProto.toString;
@@ -12588,7 +12588,7 @@ Component that was made reactive: \`, type);
   }
   var getRawTag_default = getRawTag;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_objectToString.js
+  // node_modules/lodash-es/_objectToString.js
   var objectProto2 = Object.prototype;
   var nativeObjectToString2 = objectProto2.toString;
   function objectToString2(value) {
@@ -12596,7 +12596,7 @@ Component that was made reactive: \`, type);
   }
   var objectToString_default = objectToString2;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_baseGetTag.js
+  // node_modules/lodash-es/_baseGetTag.js
   var nullTag = \\"[object Null]\\";
   var undefinedTag = \\"[object Undefined]\\";
   var symToStringTag2 = Symbol_default ? Symbol_default.toStringTag : void 0;
@@ -12608,20 +12608,20 @@ Component that was made reactive: \`, type);
   }
   var baseGetTag_default = baseGetTag;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/isObjectLike.js
+  // node_modules/lodash-es/isObjectLike.js
   function isObjectLike(value) {
     return value != null && typeof value == \\"object\\";
   }
   var isObjectLike_default = isObjectLike;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/isSymbol.js
+  // node_modules/lodash-es/isSymbol.js
   var symbolTag = \\"[object Symbol]\\";
   function isSymbol2(value) {
     return typeof value == \\"symbol\\" || isObjectLike_default(value) && baseGetTag_default(value) == symbolTag;
   }
   var isSymbol_default = isSymbol2;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_trimmedEndIndex.js
+  // node_modules/lodash-es/_trimmedEndIndex.js
   var reWhitespace = /\\\\s/;
   function trimmedEndIndex(string) {
     var index = string.length;
@@ -12631,21 +12631,21 @@ Component that was made reactive: \`, type);
   }
   var trimmedEndIndex_default = trimmedEndIndex;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/_baseTrim.js
+  // node_modules/lodash-es/_baseTrim.js
   var reTrimStart = /^\\\\s+/;
   function baseTrim(string) {
     return string ? string.slice(0, trimmedEndIndex_default(string) + 1).replace(reTrimStart, \\"\\") : string;
   }
   var baseTrim_default = baseTrim;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/isObject.js
+  // node_modules/lodash-es/isObject.js
   function isObject2(value) {
     var type = typeof value;
     return value != null && (type == \\"object\\" || type == \\"function\\");
   }
   var isObject_default = isObject2;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/toNumber.js
+  // node_modules/lodash-es/toNumber.js
   var NAN = 0 / 0;
   var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
   var reIsBinary = /^0b[01]+$/i;
@@ -12671,13 +12671,13 @@ Component that was made reactive: \`, type);
   }
   var toNumber_default = toNumber2;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/now.js
+  // node_modules/lodash-es/now.js
   var now = function() {
     return root_default.Date.now();
   };
   var now_default = now;
 
-  // vite/packages/playground/vue/node_modules/lodash-es/debounce.js
+  // node_modules/lodash-es/debounce.js
   var FUNC_ERROR_TEXT = \\"Expected a function\\";
   var nativeMax = Math.max;
   var nativeMin = Math.min;
