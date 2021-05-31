@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "serve .",
+    "serve": "serve .",
     "prebuild": "cd .. && npm run build",
     "build": "node build.js"
   },
