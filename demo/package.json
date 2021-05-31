@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "serve .",
+    "prebuild": "cd .. && npm run build",
     "build": "node build.js"
   },
   "devDependencies": {
