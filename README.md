@@ -33,7 +33,6 @@ build({
 ## Development
   - Main project set up
 ```sh
-npm run setup-submodule
 npm i
 ```
   - Start the demo
