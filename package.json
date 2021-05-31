@@ -4,7 +4,7 @@
   "description": "a esbuild plugin for vue 3 SFC files.",
   "main": "dist/src/index.js",
   "scripts": {
-    "preinstall": "git submodule init && git submodule update && node -e 'console.log(\"/packages/plugin-vue/src/\\n/packages/playground/vue/\\n/LICENSE\")' > .git/modules/vite/info/sparse-checkout && cd vite && git config core.sparsecheckout true && git read-tree -mu HEAD",
+    "setup-submodule": "git submodule init && git submodule update && node -e 'console.log(\"/packages/plugin-vue/src/\\n/packages/playground/vue/\\n/LICENSE\")' > .git/modules/vite/info/sparse-checkout && cd vite && git config core.sparsecheckout true && git read-tree -mu HEAD",
     "postinstall": "cd demo && npm i",
     "build": "tsc -P ./src/tsconfig.json",
     "postbuild": " cp -p ./vite/LICENSE ./dist/vite",
