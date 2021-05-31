@@ -16,6 +16,18 @@ exports[`generate 001. esm: indexCss 1`] = `
   color: orange;
 }
 
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Assets.vue?vue&type=style&index=0&scoped=true&lang.css */
+img[data-v-3f4d2c2a] {
+  width: 30px;
+}
+.relative-style-url[data-v-3f4d2c2a] {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url(/dist/asset-GRLFDIUO.png);
+  background-size: 30px;
+}
+
 /* vite/packages/playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
 .src-imports-style {
   color: tan;
@@ -5992,6 +6004,63 @@ cssModules[\\"mod\\"] = _default2;
 _sfc_main2.render = _sfc_render;
 var CssModules_default = _sfc_main2;
 
+// vite/packages/playground/vue/assets/asset.png
+var asset_default = \\"/dist/asset-GRLFDIUO.png\\";
+
+// vite/packages/playground/vue/public/icon.png
+var icon_default = \\"/dist/icon-VYVZIMRK.png\\";
+
+// vite/packages/playground/vue/assets/fragment.svg
+var fragment_default = \\"/dist/fragment-F5TG6UBT.svg\\";
+
+// vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Assets.vue
+var _sfc_main3 = {};
+var _withId = /* @__PURE__ */ withScopeId(\\"data-v-3f4d2c2a\\");
+pushScopeId(\\"data-v-3f4d2c2a\\");
+var _hoisted_14 = fragment_default + \\"#icon-heart-view\\";
+var _hoisted_24 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Template Static Asset Reference\\", -1);
+var _hoisted_32 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+  /* @__PURE__ */ createTextVNode(\\" Relative \\"),
+  /* @__PURE__ */ createVNode(\\"img\\", {
+    class: \\"relative-import\\",
+    src: asset_default
+  })
+], -1);
+var _hoisted_4 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+  /* @__PURE__ */ createTextVNode(\\" Relative import from another dir \\"),
+  /* @__PURE__ */ createVNode(\\"img\\", {
+    class: \\"relative-import2\\",
+    src: icon_default
+  })
+], -1);
+var _hoisted_5 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+  /* @__PURE__ */ createTextVNode(\\" Relative URL in style \\"),
+  /* @__PURE__ */ createVNode(\\"span\\", {class: \\"relative-style-url\\"})
+], -1);
+var _hoisted_6 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+  /* @__PURE__ */ createTextVNode(\\" SVG Fragment reference \\"),
+  /* @__PURE__ */ createVNode(\\"img\\", {
+    class: \\"svg-frag\\",
+    style: {\\"width\\": \\"32px\\", \\"height\\": \\"32px\\"},
+    src: _hoisted_14,
+    alt: \\"\\"
+  })
+], -1);
+popScopeId();
+var _sfc_render2 = /* @__PURE__ */ _withId((_ctx, _cache) => {
+  return openBlock(), createBlock(Fragment, null, [
+    _hoisted_24,
+    _hoisted_32,
+    createCommentVNode('\\\\n  <p>\\\\n    Absolute\\\\n    <img class=\\"absolute-import\\" src=\\"/assets/asset.png\\" />\\\\n  </p>\\\\n  <p>\\\\n    Absolute import from public dir\\\\n    <img class=\\"public-import\\" src=\\"/icon.png\\" />\\\\n  </p>\\\\n  '),
+    _hoisted_4,
+    _hoisted_5,
+    _hoisted_6
+  ], 64);
+});
+_sfc_main3.render = _sfc_render2;
+_sfc_main3.__scopeId = \\"data-v-3f4d2c2a\\";
+var Assets_default = _sfc_main3;
+
 // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue
 var import_CustomBlock_vue_vue_type_i18n_index_0_lang = __toModule(require_CustomBlock_vue_vue_type_i18n_index_0_lang());
 function useI18n(locale = \\"en\\") {
@@ -6003,23 +6072,23 @@ function useI18n(locale = \\"en\\") {
   }
   return {t};
 }
-var _sfc_main3 = {
+var _sfc_main4 = {
   setup() {
     return {...useI18n(\\"ja\\")};
   }
 };
-var _hoisted_14 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Custom Blocks\\", -1);
-var _hoisted_24 = {class: \\"custom-block\\"};
-function _sfc_render2(_ctx, _cache, $props, $setup, $data, $options) {
+var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Custom Blocks\\", -1);
+var _hoisted_25 = {class: \\"custom-block\\"};
+function _sfc_render3(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Fragment, null, [
-    _hoisted_14,
-    createVNode(\\"p\\", _hoisted_24, toDisplayString(_ctx.t(\\"hello\\")), 1)
+    _hoisted_15,
+    createVNode(\\"p\\", _hoisted_25, toDisplayString(_ctx.t(\\"hello\\")), 1)
   ], 64);
 }
 if (typeof import_CustomBlock_vue_vue_type_i18n_index_0_lang.default === \\"function\\")
-  (0, import_CustomBlock_vue_vue_type_i18n_index_0_lang.default)(_sfc_main3);
-_sfc_main3.render = _sfc_render2;
-var CustomBlock_default = _sfc_main3;
+  (0, import_CustomBlock_vue_vue_type_i18n_index_0_lang.default)(_sfc_main4);
+_sfc_main4.render = _sfc_render3;
+var CustomBlock_default = _sfc_main4;
 
 // vite/packages/playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
 var script_default = defineComponent({
@@ -6035,20 +6104,20 @@ script_default.__scopeId = \\"data-v-253b0930\\";
 var SrcImport_default = script_default;
 
 // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue
-var _sfc_main4 = {};
-var _withId = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
+var _sfc_main5 = {};
+var _withId2 = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
 pushScopeId(\\"data-v-b60acbc6\\");
-var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
+var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
 popScopeId();
-var _sfc_render3 = /* @__PURE__ */ _withId((_ctx, _cache) => {
+var _sfc_render4 = /* @__PURE__ */ _withId2((_ctx, _cache) => {
   return openBlock(), createBlock(\\"div\\", null, [
-    _hoisted_15,
+    _hoisted_16,
     renderSlot(_ctx.$slots, \\"default\\")
   ]);
 });
-_sfc_main4.render = _sfc_render3;
-_sfc_main4.__scopeId = \\"data-v-b60acbc6\\";
-var Slotted_default = _sfc_main4;
+_sfc_main5.render = _sfc_render4;
+_sfc_main5.__scopeId = \\"data-v-b60acbc6\\";
+var Slotted_default = _sfc_main5;
 
 // vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
 var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
@@ -6264,15 +6333,15 @@ function debounce(func, wait, options) {
 var debounce_default = debounce;
 
 // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
-var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
-var _hoisted_25 = {class: \\"scan\\"};
+var _hoisted_17 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
+var _hoisted_26 = {class: \\"scan\\"};
 var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
   expose: [],
   setup(__props) {
     return (_ctx, _cache) => {
       return openBlock(), createBlock(Fragment, null, [
-        _hoisted_16,
-        createVNode(\\"div\\", _hoisted_25, toDisplayString(typeof unref(debounce_default) === \\"function\\" ? \\"ok\\" : \\"error\\"), 1)
+        _hoisted_17,
+        createVNode(\\"div\\", _hoisted_26, toDisplayString(typeof unref(debounce_default) === \\"function\\" ? \\"ok\\" : \\"error\\"), 1)
       ], 64);
     };
   }
@@ -6282,15 +6351,15 @@ var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
 var ScanDep_default = ScanDep_vue_vue_type_script_setup_true_lang_default;
 
 // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/ImportFromSubDir.vue
-var _sfc_main5 = {};
-function _sfc_render4(_ctx, _cache) {
+var _sfc_main6 = {};
+function _sfc_render5(_ctx, _cache) {
   return openBlock(), createBlock(\\"div\\", null, \\"Hello from sub dir\\");
 }
-_sfc_main5.render = _sfc_render4;
-var ImportFromSubDir_default = _sfc_main5;
+_sfc_main6.render = _sfc_render5;
+var ImportFromSubDir_default = _sfc_main6;
 
 // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/SubDir.vue
-var _sfc_main6 = {
+var _sfc_main7 = {
   expose: [],
   setup(__props) {
     return (_ctx, _cache) => {
@@ -6298,15 +6367,15 @@ var _sfc_main6 = {
     };
   }
 };
-var SubDir_default = _sfc_main6;
+var SubDir_default = _sfc_main7;
 
 // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
-var _hoisted_17 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
+var _hoisted_18 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
   /* @__PURE__ */ createCommentVNode(\\"hello\\")
 ], -1);
-var _hoisted_26 = /* @__PURE__ */ createVNode(\\"h1\\", null, \\"Vue SFCs\\", -1);
-var _hoisted_32 = {class: \\"hmr-block\\"};
-var _hoisted_4 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"slotted\\"}, \\"this should be red\\", -1);
+var _hoisted_27 = /* @__PURE__ */ createVNode(\\"h1\\", null, \\"Vue SFCs\\", -1);
+var _hoisted_33 = {class: \\"hmr-block\\"};
+var _hoisted_42 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"slotted\\"}, \\"this should be red\\", -1);
 var Main_vue_vue_type_script_setup_true_lang_default = defineComponent({
   expose: [],
   setup(__props) {
@@ -6319,21 +6388,21 @@ var Main_vue_vue_type_script_setup_true_lang_default = defineComponent({
     });
     return (_ctx, _cache) => {
       return openBlock(), createBlock(Fragment, null, [
-        _hoisted_17,
-        _hoisted_26,
+        _hoisted_18,
+        _hoisted_27,
         createVNode(\\"pre\\", null, toDisplayString(time.value), 1),
-        createVNode(\\"div\\", _hoisted_32, [
+        createVNode(\\"div\\", _hoisted_33, [
           createVNode(Hmr_default)
         ]),
         createVNode(Syntax_default),
         createCommentVNode(\\"<PreProcessors />\\"),
         createVNode(CssModules_default),
-        createCommentVNode(\\"<Assets />\\"),
+        createVNode(Assets_default),
         createVNode(CustomBlock_default),
         createVNode(SrcImport_default),
         createVNode(Slotted_default, null, {
           default: withCtx(() => [
-            _hoisted_4
+            _hoisted_42
           ]),
           _: 1
         }),
@@ -6358,7 +6427,7 @@ createApp(Main_default).mount(\\"#app\\");
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=/dist/index.js.map
 "
 `;
 
@@ -6376,6 +6445,18 @@ exports[`generate 002. iife: indexCss 1`] = `
 /* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CssModules.vue?vue&type=style&index=1&lang.module.scss */
 .orange-color {
   color: orange;
+}
+
+/* vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Assets.vue?vue&type=style&index=0&scoped=true&lang.css */
+img[data-v-3f4d2c2a] {
+  width: 30px;
+}
+.relative-style-url[data-v-3f4d2c2a] {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url(/dist/asset-GRLFDIUO.png);
+  background-size: 30px;
 }
 
 /* vite/packages/playground/vue/src-import/style.css?vue&type=style&index=0&src&scoped=true&lang.css */
@@ -12355,6 +12436,63 @@ Component that was made reactive: \`, type);
   _sfc_main2.render = _sfc_render;
   var CssModules_default = _sfc_main2;
 
+  // vite/packages/playground/vue/assets/asset.png
+  var asset_default = \\"/dist/asset-GRLFDIUO.png\\";
+
+  // vite/packages/playground/vue/public/icon.png
+  var icon_default = \\"/dist/icon-VYVZIMRK.png\\";
+
+  // vite/packages/playground/vue/assets/fragment.svg
+  var fragment_default = \\"/dist/fragment-F5TG6UBT.svg\\";
+
+  // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Assets.vue
+  var _sfc_main3 = {};
+  var _withId = /* @__PURE__ */ withScopeId(\\"data-v-3f4d2c2a\\");
+  pushScopeId(\\"data-v-3f4d2c2a\\");
+  var _hoisted_14 = fragment_default + \\"#icon-heart-view\\";
+  var _hoisted_24 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Template Static Asset Reference\\", -1);
+  var _hoisted_32 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+    /* @__PURE__ */ createTextVNode(\\" Relative \\"),
+    /* @__PURE__ */ createVNode(\\"img\\", {
+      class: \\"relative-import\\",
+      src: asset_default
+    })
+  ], -1);
+  var _hoisted_4 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+    /* @__PURE__ */ createTextVNode(\\" Relative import from another dir \\"),
+    /* @__PURE__ */ createVNode(\\"img\\", {
+      class: \\"relative-import2\\",
+      src: icon_default
+    })
+  ], -1);
+  var _hoisted_5 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+    /* @__PURE__ */ createTextVNode(\\" Relative URL in style \\"),
+    /* @__PURE__ */ createVNode(\\"span\\", {class: \\"relative-style-url\\"})
+  ], -1);
+  var _hoisted_6 = /* @__PURE__ */ createVNode(\\"p\\", null, [
+    /* @__PURE__ */ createTextVNode(\\" SVG Fragment reference \\"),
+    /* @__PURE__ */ createVNode(\\"img\\", {
+      class: \\"svg-frag\\",
+      style: {\\"width\\": \\"32px\\", \\"height\\": \\"32px\\"},
+      src: _hoisted_14,
+      alt: \\"\\"
+    })
+  ], -1);
+  popScopeId();
+  var _sfc_render2 = /* @__PURE__ */ _withId((_ctx, _cache) => {
+    return openBlock(), createBlock(Fragment, null, [
+      _hoisted_24,
+      _hoisted_32,
+      createCommentVNode('\\\\n  <p>\\\\n    Absolute\\\\n    <img class=\\"absolute-import\\" src=\\"/assets/asset.png\\" />\\\\n  </p>\\\\n  <p>\\\\n    Absolute import from public dir\\\\n    <img class=\\"public-import\\" src=\\"/icon.png\\" />\\\\n  </p>\\\\n  '),
+      _hoisted_4,
+      _hoisted_5,
+      _hoisted_6
+    ], 64);
+  });
+  _sfc_main3.render = _sfc_render2;
+  _sfc_main3.__scopeId = \\"data-v-3f4d2c2a\\";
+  var Assets_default = _sfc_main3;
+
   // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/CustomBlock.vue
   var import_CustomBlock_vue_vue_type_i18n_index_0_lang = __toModule(require_CustomBlock_vue_vue_type_i18n_index_0_lang());
   function useI18n(locale = \\"en\\") {
@@ -12366,23 +12504,23 @@ Component that was made reactive: \`, type);
     }
     return {t};
   }
-  var _sfc_main3 = {
+  var _sfc_main4 = {
     setup() {
       return {...useI18n(\\"ja\\")};
     }
   };
-  var _hoisted_14 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Custom Blocks\\", -1);
-  var _hoisted_24 = {class: \\"custom-block\\"};
-  function _sfc_render2(_ctx, _cache, $props, $setup, $data, $options) {
+  var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Custom Blocks\\", -1);
+  var _hoisted_25 = {class: \\"custom-block\\"};
+  function _sfc_render3(_ctx, _cache, $props, $setup, $data, $options) {
     return openBlock(), createBlock(Fragment, null, [
-      _hoisted_14,
-      createVNode(\\"p\\", _hoisted_24, toDisplayString(_ctx.t(\\"hello\\")), 1)
+      _hoisted_15,
+      createVNode(\\"p\\", _hoisted_25, toDisplayString(_ctx.t(\\"hello\\")), 1)
     ], 64);
   }
   if (typeof import_CustomBlock_vue_vue_type_i18n_index_0_lang.default === \\"function\\")
-    (0, import_CustomBlock_vue_vue_type_i18n_index_0_lang.default)(_sfc_main3);
-  _sfc_main3.render = _sfc_render2;
-  var CustomBlock_default = _sfc_main3;
+    (0, import_CustomBlock_vue_vue_type_i18n_index_0_lang.default)(_sfc_main4);
+  _sfc_main4.render = _sfc_render3;
+  var CustomBlock_default = _sfc_main4;
 
   // vite/packages/playground/vue/src-import/script.ts?vue&type=script&src&lang.ts
   var script_default = defineComponent({
@@ -12398,20 +12536,20 @@ Component that was made reactive: \`, type);
   var SrcImport_default = script_default;
 
   // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Slotted.vue
-  var _sfc_main4 = {};
-  var _withId = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
+  var _sfc_main5 = {};
+  var _withId2 = /* @__PURE__ */ withScopeId(\\"data-v-b60acbc6\\");
   pushScopeId(\\"data-v-b60acbc6\\");
-  var _hoisted_15 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
+  var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\":slotted\\", -1);
   popScopeId();
-  var _sfc_render3 = /* @__PURE__ */ _withId((_ctx, _cache) => {
+  var _sfc_render4 = /* @__PURE__ */ _withId2((_ctx, _cache) => {
     return openBlock(), createBlock(\\"div\\", null, [
-      _hoisted_15,
+      _hoisted_16,
       renderSlot(_ctx.$slots, \\"default\\")
     ]);
   });
-  _sfc_main4.render = _sfc_render3;
-  _sfc_main4.__scopeId = \\"data-v-b60acbc6\\";
-  var Slotted_default = _sfc_main4;
+  _sfc_main5.render = _sfc_render4;
+  _sfc_main5.__scopeId = \\"data-v-b60acbc6\\";
+  var Slotted_default = _sfc_main5;
 
   // vite/packages/playground/vue/node_modules/lodash-es/_freeGlobal.js
   var freeGlobal = typeof global == \\"object\\" && global && global.Object === Object && global;
@@ -12627,15 +12765,15 @@ Component that was made reactive: \`, type);
   var debounce_default = debounce;
 
   // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/ScanDep.vue?vue&type=script&setup=true&lang.ts
-  var _hoisted_16 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
-  var _hoisted_25 = {class: \\"scan\\"};
+  var _hoisted_17 = /* @__PURE__ */ createVNode(\\"h2\\", null, \\"Scan Deps from <script setup lang=ts> blocks\\", -1);
+  var _hoisted_26 = {class: \\"scan\\"};
   var ScanDep_vue_vue_type_script_setup_true_lang_default = defineComponent({
     expose: [],
     setup(__props) {
       return (_ctx, _cache) => {
         return openBlock(), createBlock(Fragment, null, [
-          _hoisted_16,
-          createVNode(\\"div\\", _hoisted_25, toDisplayString(typeof unref(debounce_default) === \\"function\\" ? \\"ok\\" : \\"error\\"), 1)
+          _hoisted_17,
+          createVNode(\\"div\\", _hoisted_26, toDisplayString(typeof unref(debounce_default) === \\"function\\" ? \\"ok\\" : \\"error\\"), 1)
         ], 64);
       };
     }
@@ -12645,15 +12783,15 @@ Component that was made reactive: \`, type);
   var ScanDep_default = ScanDep_vue_vue_type_script_setup_true_lang_default;
 
   // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/ImportFromSubDir.vue
-  var _sfc_main5 = {};
-  function _sfc_render4(_ctx, _cache) {
+  var _sfc_main6 = {};
+  function _sfc_render5(_ctx, _cache) {
     return openBlock(), createBlock(\\"div\\", null, \\"Hello from sub dir\\");
   }
-  _sfc_main5.render = _sfc_render4;
-  var ImportFromSubDir_default = _sfc_main5;
+  _sfc_main6.render = _sfc_render5;
+  var ImportFromSubDir_default = _sfc_main6;
 
   // vue-iii-transform:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/src-subdir/SubDir.vue
-  var _sfc_main6 = {
+  var _sfc_main7 = {
     expose: [],
     setup(__props) {
       return (_ctx, _cache) => {
@@ -12661,15 +12799,15 @@ Component that was made reactive: \`, type);
       };
     }
   };
-  var SubDir_default = _sfc_main6;
+  var SubDir_default = _sfc_main7;
 
   // vue-iii-load:/Users/owner/github/kena0ki/esbuild-plugin-vue-iii/vite/packages/playground/vue/Main.vue?vue&type=script&setup=true&lang.ts
-  var _hoisted_17 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
+  var _hoisted_18 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"comments\\"}, [
     /* @__PURE__ */ createCommentVNode(\\"hello\\")
   ], -1);
-  var _hoisted_26 = /* @__PURE__ */ createVNode(\\"h1\\", null, \\"Vue SFCs\\", -1);
-  var _hoisted_32 = {class: \\"hmr-block\\"};
-  var _hoisted_4 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"slotted\\"}, \\"this should be red\\", -1);
+  var _hoisted_27 = /* @__PURE__ */ createVNode(\\"h1\\", null, \\"Vue SFCs\\", -1);
+  var _hoisted_33 = {class: \\"hmr-block\\"};
+  var _hoisted_42 = /* @__PURE__ */ createVNode(\\"div\\", {class: \\"slotted\\"}, \\"this should be red\\", -1);
   var Main_vue_vue_type_script_setup_true_lang_default = defineComponent({
     expose: [],
     setup(__props) {
@@ -12682,21 +12820,21 @@ Component that was made reactive: \`, type);
       });
       return (_ctx, _cache) => {
         return openBlock(), createBlock(Fragment, null, [
-          _hoisted_17,
-          _hoisted_26,
+          _hoisted_18,
+          _hoisted_27,
           createVNode(\\"pre\\", null, toDisplayString(time.value), 1),
-          createVNode(\\"div\\", _hoisted_32, [
+          createVNode(\\"div\\", _hoisted_33, [
             createVNode(Hmr_default)
           ]),
           createVNode(Syntax_default),
           createCommentVNode(\\"<PreProcessors />\\"),
           createVNode(CssModules_default),
-          createCommentVNode(\\"<Assets />\\"),
+          createVNode(Assets_default),
           createVNode(CustomBlock_default),
           createVNode(SrcImport_default),
           createVNode(Slotted_default, null, {
             default: withCtx(() => [
-              _hoisted_4
+              _hoisted_42
             ]),
             _: 1
           }),
@@ -12722,6 +12860,6 @@ Component that was made reactive: \`, type);
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=/dist/index.js.map
 "
 `;
