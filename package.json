@@ -4,7 +4,6 @@
   "description": "a esbuild plugin for vue 3 SFC files.",
   "main": "dist/src/index.js",
   "scripts": {
-    "prepare": "npm run setup-submodule && cd demo && npm i",
     "setup-submodule": "git submodule init && git submodule update && node -e 'console.log(\"/packages/plugin-vue/src/\\n/packages/playground/vue/\\n/LICENSE\")' > .git/modules/vite/info/sparse-checkout && cd vite && git config core.sparsecheckout true && git read-tree -mu HEAD",
     "build": "tsc -P ./src/tsconfig.json",
     "postbuild": " cp -p ./vite/LICENSE ./dist/vite",
@@ -38,7 +37,7 @@
     "@types/node": "^15.0.2",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
-    "esbuild": "^0.12.27"
+    "esbuild": "^0.12.27",
     "eslint": "^7.25.0",
     "jest": "^26.6.3",
     "lodash-es": "^4.17.21",
